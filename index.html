@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TYP - The Youth Project</title>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo"></div>
+        <div id="navigator">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT US</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    </div>
+    <div id="home" class="gradient"></div>
+    <div id="welcome">
+        Welcome to TYP!
+    </div>
+
+
+    <div id="content">
+        <div id="mentors">
+            <span class="heading">MENTORS</span>
+            <div id="cs_mentors" class="cardsection">
+            </div>
+        </div>
+
+        <div id="about">
+            <span class="heading">ABOUT US</span><br>
+            <div id="about-content">
+                <div class="about_left">
+                    <span class="subheading">About</span><br><br>
+                    <p>The Youth Project initiative brings you the amazing opportunity to utilize this time and enroll
+                        into
+                        <span class="typ-text">TYP.</span> remote track.
+                    </p><br><br>
+                    <p>As part of the <span class="typ-text">TYP.</span> live course, you will:</p><br><br>
+                    <p class="tabtext"><span class="typ-text typ-arrow">></span> &nbsp; get <span
+                            class="typ-text typ-green">instructor</span> led interactive live training classes</p><br>
+                    <p class="tabtext"><span class="typ-text typ-arrow">></span> &nbsp; <span
+                            class="typ-text typ-green">learn</span> from industry experts</p><br>
+                    <p class="tabtext"><span class="typ-text typ-arrow">></span> &nbsp; do assignments and practicals to
+                        <span class="typ-text typ-green">test</span> your learning</p><br>
+                    <p class="tabtext"><span class="typ-text typ-arrow">></span> &nbsp; get <span
+                            class="typ-text typ-green">one to one sessions</span> with mentors to clear doubts</p><br>
+                    <p class="tabtext"><span class="typ-text typ-arrow">></span> &nbsp; make <span
+                            class="typ-text typ-green">new friends</span> from across globe</p><br>
+                    <p class="tabtext"><span class="typ-text typ-arrow">></span> &nbsp; become <span
+                            class="typ-text typ-green">market-ready</span> with better employment opportunities</p><br>
+                    <p class="tabtext"><span class="typ-text typ-arrow">></span> &nbsp; earn a <span
+                            class="typ-text">TYP.</span> <span class="typ-text typ-green">certificate</span> after
+                        project completion
+                    </p><br>
+                </div>
+                <div class="about_right">
+                    <span class="subheading">Latest Updates</span><br>
+                    <div id="News">
+                        <table id="NewsTable">
+                            <tr>
+                                <td>
+                                    <marquee>Wee!</marquee>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <marquee>News 01</marquee>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <marquee>News 02</marquee>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <marquee>News 03</marquee>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <marquee>News 05</marquee>
+                                </td>
+                            </tr>
+                        </table>
+                    </div><br>
+                    <div id="UpdateForm">
+                        <button class="btn btn-green" onclick="ShowForm()">Update</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="members">
+            <span class="heading">MEMBERS</span>
+            <div id="cs_members" class="cardsection">
+            </div>
+        </div>
+
+        <div id="MemberUpdate">
+            <span class="subheading">Update Members:</span><br>
+            <div id="MemberUpdateForm">
+                <input id="MemberName" type="text" placeholder="Name"><span class="input_imp">*</span><br>
+                <input id="MemberDesc" type="text" value="Team member at TYP" placeholder="Description"><span
+                    class="input_imp">*</span><br>
+                <div class="btn_inline">
+                    <button id="btn_submit" class="btn btn-green" onclick="UpdateMember()">Submit</button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <button id="btn_back" class="btn btn-red" onclick="ShowMemberForm()">Back</button>
+                </div>
+            </div>
+            <button id="btn_update" class="btn btn-green" onclick="ShowMemberForm()">Update</button>
+        </div>
+
+        <div id="contact"></div>
+        <div id="footer">
+            <div class="footer-logo">
+                <img src="assets/logo/logo.svg">
+            </div>
+            <div class="footer-content">
+                <h2>Follow Us On</h2>
+                <hr>
+                <a href="#"><span class="social facebook"></span></a>
+                <a href="#"><span class="social linkedin"></span></a>
+                <a href="#"><span class="social twitter"></span></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        CardAppend();    
+    </script>
+</body>
+
+</html>
